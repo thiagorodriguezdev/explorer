@@ -78,6 +78,8 @@ body * {
   transform: translateY(-50%);
   left: 0;
   z-index: 1;
+
+  animation: slide-back .4s forwards;
 }
 
 #switch span {
@@ -92,8 +94,7 @@ body * {
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in .4s forwards;
 }
 
 /* links */
@@ -165,5 +166,25 @@ footer {
   }
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpf);
+  }
+}
+
+/* animations */
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
