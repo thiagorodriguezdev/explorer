@@ -79,7 +79,11 @@ body * {
   left: 0;
   z-index: 1;
 
-  animation: slide-back .4s forwards;
+  animation: slide-back .3s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -94,7 +98,7 @@ body * {
 }
 
 .light #switch button {
-  animation: slide-in .4s forwards;
+  animation: slide-in .3s forwards;
 }
 
 /* links */
