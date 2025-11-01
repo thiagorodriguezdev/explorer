@@ -164,6 +164,6 @@ footer {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
   .light {
-    --b-url: url(./assets/bg-desktop-light.jpf);
+    --bg-url: url(./assets/bg-desktop-light.jpf);
   }
 }
